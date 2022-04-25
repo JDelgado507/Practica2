@@ -26,17 +26,19 @@ public class Practica2 {
 
             String numero1;
             do {
-                System.out.println("\n Introdueix el primer numero. ");
+                System.out.println("Calculadora Java"
+                        + "\n-----------------------"
+                        + "\nIntrodueix el primer numero. ");
                 numero1 = sc.nextLine();
             } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume1 = Double.parseDouble(numero1);
             double n1 = new Double(numero1);
 
             do {
-                System.out.println("\n Operació? (Indica el signe)");
-                System.out.println("+ = sumar \n - = restar \n"
-                        + " x = multiplicar \n / = dividir \n * = elevar primer num al segon num."
-                        + "\n % = residu");
+                System.out.println("\nOperació? (Indica el signe)");
+                System.out.println("1.+ = sumar \n2.- = restar \n"
+                        + "3.x = multiplicar \n4./ = dividir \n5.* = elevar primer num al segon num."
+                        + "\n6.% = residu");
                 operacion = sc.nextLine();
                 if (operacion.equals("+") || operacion.equals("-") || operacion.equals("x")
                         || operacion.equals("X") || operacion.equals("/") || operacion.equals("%")

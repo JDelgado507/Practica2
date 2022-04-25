@@ -61,7 +61,7 @@ public class Practica2 {
                 comprobar = true;
                 switch (operacion) {
                     case "+":
-                        res = n2 + n2;
+                        res = n1 + n2;
                         break;
                     case "-":
                         res = n1 - n2;
@@ -83,7 +83,7 @@ public class Practica2 {
                         res = n1 / n2;
                         break;
                     case "*":
-                        res = Math.pow(n1, n1);
+                        res = Math.pow(n1, n2);
                         break;
                     case "%":
                         while (n2 == 0) {

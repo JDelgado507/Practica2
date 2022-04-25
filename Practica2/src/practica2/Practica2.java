@@ -35,10 +35,7 @@ public class Practica2 {
             double n1 = new Double(numero1);
 
             do {
-                System.out.println("\nOperació? (Indica el signe)");
-                System.out.println("1.+ = sumar \n2.- = restar \n"
-                        + "3.x = multiplicar \n4./ = dividir \n5.* = elevar primer num al segon num."
-                        + "\n6.% = residu");
+               Metodos.mostrarMenu();
                 operacion = sc.nextLine();
                 if (operacion.equals("+") || operacion.equals("-") || operacion.equals("x")
                         || operacion.equals("X") || operacion.equals("/") || operacion.equals("%")

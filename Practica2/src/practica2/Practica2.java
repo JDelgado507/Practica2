@@ -25,15 +25,9 @@ public class Practica2 {
         do {
 
             String numero1;
-            do {
-                System.out.println("Calculadora Java"
-                        + "\n-----------------------"
-                        + "\nIntrodueix el primer numero. ");
-                numero1 = sc.nextLine();
-            } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
-            double nume1 = Double.parseDouble(numero1);
+             numero1 = Metodos.pedirPrimerNumero();
             double n1 = new Double(numero1);
-
+           
             do {
                Metodos.mostrarMenu();
                 operacion = sc.nextLine();
